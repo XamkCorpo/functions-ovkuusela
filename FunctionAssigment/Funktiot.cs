@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +24,12 @@ namespace FunctionAssigment
                 Console.WriteLine("You are not an adult.");
 
             CompareName(name);
+
+            while (true)
+            {
+                Console.WriteLine("Paina mitä tahansa nappia poistuaksesi. ");
+                if (Console.ReadKey() != null) break;
+            }
         }
 
         // Antaa käyttäjän syöttämän nimen stringinä
@@ -73,5 +79,4 @@ namespace FunctionAssigment
         }
 
     }
-
 }
